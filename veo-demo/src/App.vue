@@ -63,6 +63,7 @@ function remove(id) {
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
+  background-color: rgb(224, 220, 220);
 }
 
 h1 {
@@ -78,10 +79,10 @@ h1 {
 }
 
 .input {
-  height: 40px;
+  height: 30px;
   width: 400px;
   border: 1px solid blue;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 5px;
   font-size: 16px;
 }
@@ -91,17 +92,29 @@ h1 {
   padding: 10px;
   color: black;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .container {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-align: left;
 }
 
 ul {
   list-style: none;
-  padding: 0;
+  padding: 10px;
+}
+
+li {
+  background-color: honeydew;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .del-btn {
@@ -109,15 +122,23 @@ ul {
   padding: 10px;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .delall {
-  background-color: #f44336;
+  background-color: #160302;
   color: white;
   border: none;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.delall:hover {
+  background-color: white;
+  color: red;
 }
 
 </style>
